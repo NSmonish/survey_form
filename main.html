@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;0,800;1,200&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="heading">
+        Survey Form
+    </div>
+
+    <div class="form-details">
+        <form class="input-fields">
+            <label for="nameInput"> Name <br>
+                <input type="text" placeholder="Enter your name" class="input" id="name">
+            </label> <br>
+            <label for="dobInput"> Date of Birth <br>
+                <input type="date" class="input" id="dob">
+            </label> <br>
+            <label for="genderInput"> Gender <br>
+                <input type="radio" value="male" class="gen"> Male
+                <input type="radio" value="female" class="gen"> Female
+                <input type="radio" value="others" class="gen"> Others
+            </label> <br>
+            <label for="emailInput"> Email ID <br>
+                <input type="email" palceholder="Enter your Email" class="input" id="email">
+            </label> <br>
+            <label for="countryInput"> Country <br>
+                <input list="country" class="input" placeholder="Select your Country" name="country" id="countries">
+                <datalist id="country">
+                    <option value="India">
+                    <option value="United States">
+                    <option value="United Kingdom">
+                    <option value="Russia">
+                    <option value="China">
+            </label> <br>
+            <label for="progInput" class="prog"> Programme <br>
+                <input type="checkbox" value="Btech" class="cb">Btech <br>
+                <input type="checkbox" value="Btech" class="cb">Mtech
+            </label> <br>
+            <label for="q1"> Brief about your current technical knowledge <br>
+                <textarea name="ans1" id="curKnowledge" cols="35" rows="5" class="input"></textarea>
+            </label> <br>
+            <label for="q2"> What do you aim to achieve? <br>
+                <textarea name="ans2" id="aim" cols="35" rows="5" class="input"></textarea>
+            </label> <br>
+            <label for="q3"> Describe your dream project <br>
+                <textarea name="ans3" id="dreamProject" cols="35" rows="5" class="input"></textarea>
+            </label> <br>
+
+            <button type="submit" class="button" id="submitBtn">SUBMIT</button>
+        </form>
+    </div>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
